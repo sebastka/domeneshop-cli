@@ -21,13 +21,13 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../domeneshop-php"
+            "url": "../domeneshop-php*"
         }
     ],
     "require": {
         "php": ">=8.4",
         "guzzlehttp/guzzle": "^7.10 || ^8.0",
-        "sebastka/domeneshop-php": "^0.2",
+        "sebastka/domeneshop-php": "^0.3",
         "symfony/console": "^7.0 || ^8.0"
     },
     "require-dev": {
@@ -48,6 +48,15 @@
     ],
     "scripts": {
         "test": "phpunit"
+    },
+    "suggest": {
+        "sebastka/domeneshop-dashboard": "Adds read-only dashboard:* commands for data the API does not expose (contacts, nameservers, DNSSEC). Unofficial: scrapes the web dashboard."
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.3.x-dev",
+            "dev-main": "0.3.x-dev"
+        }
     },
     "config": {
         "sort-packages": true,
